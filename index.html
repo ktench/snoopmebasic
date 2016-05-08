@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>SnoopMe</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.6.0/hello.all.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="jQuery.socialmedia.js"></script> 
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">    
+  <link href="jQuery.socialmedia.css" rel="stylesheet" />
+
+<script type='text/javascript'>
+
+    $(document).ready(function () {
+        $('#connect').on('click', function () {
+            $("#mySocialMedia").socialMedia({
+    
+                facebook: {
+                    enabled: true,
+                    key: "1635811846698729"
+                },
+                instagram: {
+                    enabled: true,                    key:"534075e6189d4cf78de71187c88409de"
+                }
+            });
+        });
+        $('#fetch').on('click', function () {
+           alert('fetch'); $("#mySocialMedia").socialMedia('fetch');
+        });
+    });
+
+</script>
+
+
+</head>
+<body>
+    <header id="cover">
+        <img src="" id="profile-photo"></div>
+    </header>
+    <h1 id="name"></h1>
+    <h2 id="age"></h2>
+    <div class="container-fluid">
+        
+<!--        <h1>SnoopMe</h1>-->
+        <button class="btn btn-primary" id="connect">Connect to social media</button>
+        <button class="btn btn-primary" id="fetch">Generate Profile</button>
+        <div id="mySocialMedia" style="margin-top: 110px"></div>
+    </div>    
+</body>
+
+</html>
+
