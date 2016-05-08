@@ -33,19 +33,23 @@ body {
 }
 
 .grid-item {
+    
+    font-size:20px !important;
   width: 48%;
   float: left;
-  min-height: 90px;
-    height:100px;
+  min-height: 250px;
+    height:250px;
+/*
   border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
   border: 2px dashed #999;
+*/
   margin-bottom: 50px;
 }
 
 .grid-item > div {
-  padding: 10px;
+/*  padding: 10px;*/
 }
 
 .grid-item > div.twitter::after {
