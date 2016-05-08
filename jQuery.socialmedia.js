@@ -174,7 +174,7 @@ var APPSecret = "616aa52b56c52d6fef545dfc45041156";
         // Attach masonry plugin
         $masonryDiv.masonry({
             itemSelector: '.grid-item',
-            gutter: 10
+            gutter: 100
         });
 
     }
